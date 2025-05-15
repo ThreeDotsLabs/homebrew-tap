@@ -5,20 +5,20 @@
 class Tdl < Formula
   desc "This is the tdl CLI tool used for running the interactive trainings on the https://academy.threedots.tech/"
   homepage "https://academy.threedots.tech/"
-  version "0.1.55"
+  version "0.1.56"
 
   on_macos do
     on_intel do
-      url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.55/tdl_Darwin_x86_64"
-      sha256 "ce83963d1dbaef0c51a7e9a45efb4dfd89cc719b222b63e9c7cb274af42eb048"
+      url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.56/tdl_Darwin_x86_64"
+      sha256 "4c22b6696969840762e7abc39aef359df4a482eaed716d99545635bc038f0d6a"
 
       def install
         bin.install "tdl_Darwin_x86_64" => "tdl"
       end
     end
     on_arm do
-      url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.55/tdl_Darwin_arm64"
-      sha256 "24249d8573d90727e6a9a18734f86e2e563ccd86ac4ec63cc1d87fef2d47b659"
+      url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.56/tdl_Darwin_arm64"
+      sha256 "38e53d5fc383ef751018f742cd546239b9f4bc6c10befb852682b9d18a27939c"
 
       def install
         bin.install "tdl_Darwin_arm64" => "tdl"
@@ -29,8 +29,8 @@ class Tdl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.55/tdl_Linux_x86_64"
-        sha256 "a5f78da5ee6176a382ca49ac431628b7da5cf9996075cdedb91d4ad91e2481a0"
+        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.56/tdl_Linux_x86_64"
+        sha256 "69202843a5e700061298e3258dec6d9372748efb0104d5d8854b6aff99af5a53"
 
         def install
           bin.install "tdl_Linux_x86_64" => "tdl"
@@ -39,8 +39,8 @@ class Tdl < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.55/tdl_Linux_arm"
-        sha256 "5c8c4741c2b5435287ef0904c9cd7270bd2f099a179bd680090c0848ec5bc579"
+        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.56/tdl_Linux_arm"
+        sha256 "5814233794737823247308b85343281d9ef3e51622c99c71b7eb36758e9f6112"
 
         def install
           bin.install "tdl_Linux_arm" => "tdl"
@@ -49,8 +49,8 @@ class Tdl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.55/tdl_Linux_arm64"
-        sha256 "b808ca0bea74f30c658e2d6646d6a210a9a9e2a4b811a8f092d79e7b9f6f3477"
+        url "https://github.com/ThreeDotsLabs/cli/releases/download/v0.1.56/tdl_Linux_arm64"
+        sha256 "7610c1334488e6cdce330fd87558119742bfd4d9f2e27a8f0e24e193b8611562"
 
         def install
           bin.install "tdl_Linux_arm64" => "tdl"
