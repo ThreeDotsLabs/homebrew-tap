@@ -1,6 +1,6 @@
 cask "bento" do
-  version "0.1.0"
-  sha256 "9e36c9f2b2d666ec00913524d65f033ef3122d89d0f0bc53175b378c5875a6b5"
+  version "0.1.1"
+  sha256 "b6fb6c964f856f0c8b875ce7afb893ee7ac18d86ab0068abd0a954736085681c"
 
   url "https://github.com/ThreeDotsLabs/homebrew-tap/releases/download/v#{version}/Bento-#{version}-arm64.zip"
   name "Bento"
@@ -13,6 +13,8 @@ cask "bento" do
   app "Bento.app"
   binary "#{appdir}/Bento.app/Contents/MacOS/bento"
 
+  # No auto_updates: bento's Update button runs brew upgrade, which
+  # skips casks that say they update themselves.
   # TODO: sign with a Developer ID and notarize, then drop this step.
   # The app is not notarized, so Gatekeeper would refuse the download.
   postflight_steps do
