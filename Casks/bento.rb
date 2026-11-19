@@ -1,6 +1,6 @@
 cask "bento" do
-  version "0.1.3"
-  sha256 "1abc0a32b33eeac0e38ea8c0f45702e81d38c9da23f927e8f5c5a2f924833182"
+  version "0.1.4"
+  sha256 "84ff1a54df1005802bfc1ec53be006c8cfcf11024dca526f2419f679891b7888"
 
   url "https://github.com/ThreeDotsLabs/homebrew-tap/releases/download/v#{version}/Bento-#{version}-arm64.zip"
   name "Bento"
